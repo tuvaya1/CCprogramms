@@ -1,10 +1,10 @@
 comands:
 
-получить отправлялку: wget "" mail_sender.lua
-получить принималку: wget "" mail_reader.lua
-запустить принималку mail_reader.lua
-запустить отправлялку mail_sender.lua
-изменить код edit mail_reader.lua или mail_sender.lua
+получить отправлялку: wget "https://raw.githubusercontent.com/tuvaya1/CCprogramms/refs/heads/main/mail_sender.lua" mail_sender.lua
+получить принималку: wget "https://raw.githubusercontent.com/tuvaya1/CCprogramms/refs/heads/main/mail_reader.lua" mail_reader.lua
+запустить принималку: mail_reader.lua
+запустить отправлялку: mail_sender.lua
+изменить код: edit mail_reader.lua или mail_sender.lua
 но лучше изменять хотя бы в блокноте
 файлы будут в 
 saves\папка мира\computercraft\computer\0
