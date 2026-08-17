@@ -14,7 +14,7 @@ function toString(input)
   return s
 end
 
-function IN.readLine() do
+function IN.readLine()
 	local last = rs.getInput("left")
 	local input = ""
 	while true do
