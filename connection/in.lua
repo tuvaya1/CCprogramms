@@ -22,10 +22,10 @@ function IN.readLine()
 		if rs.getInput(io.IN_SYNTH) ~= last then
 			last = rs.getInput(io.IN_SYNTH)
 			if (rs.getInput("back")) then
-				write("-")
+				--write("-")
 				input = input .. "-"
 			else 
-				write(".")
+				--write(".")
 				input = input .. "."
 			end
 		end
