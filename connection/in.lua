@@ -8,24 +8,22 @@ function toString(input)
   local len = #input
   for i = 1, len, 8 do
     local chunk = input:sub(i, i + 7)
-    local code = codes[chunk] or "<?>"
+    local code = codes.ctl[chunk] or "<?>"
     s = s .. code
   end
   return s
 end
 
 function IN.readLine()
-	local last = rs.getInput("left")
+	local last = rs.getInput(io.IN_SYNTH)
 	local input = ""
 	while true do
 		local event= os.pullEvent("redstone")
 		if rs.getInput(io.IN_SYNTH) ~= last then
 			last = rs.getInput(io.IN_SYNTH)
-			if (rs.getInput("back")) then
-				--write("-")
+			if (rs.getInput(io.IN_DATA)) then
 				input = input .. "-"
 			else 
-				--write(".")
 				input = input .. "."
 			end
 		end
