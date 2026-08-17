@@ -1,6 +1,6 @@
 local IO = {}
-M.OUT_SYNTH = ""
-M.OUT_DATA = ""
-M.IN_SYNTH = ""
-M.IN_DATA = ""
+IO.OUT_SYNTH = ""
+IO.OUT_DATA = ""
+IO.IN_SYNTH = ""
+IO.IN_DATA = ""
 return IO
