@@ -5,7 +5,7 @@ local OUT = {}
 
 local tick
 
-function sendChar(char) do
+function sendChar(char)
 	local c = codes.ltc[char];
     	if not c then return end
 
@@ -17,7 +17,7 @@ function sendChar(char) do
 	end
 end
 
-function OUT.print(input) do
+function OUT.print(input)
 	tick = rs.getOutput(io.OUT_SYNTH)
 	rs.setOutput(io.OUT_DATA, false)
 	
@@ -26,7 +26,7 @@ function OUT.print(input) do
 	end
 end
 
-function OUT.println(input) do
+function OUT.println(input)
 	print(inpit .. "&")
 end
 
