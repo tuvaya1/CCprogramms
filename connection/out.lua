@@ -32,4 +32,4 @@ function OUT.println(input)
     OUT.print(input .. "&")
 end
  
-return
+return OUT
