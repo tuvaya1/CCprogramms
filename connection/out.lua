@@ -1,5 +1,5 @@
-local io = require("IO_settings")
-local codes = require("codes")
+local io = require("Connect_lib.IO_settings")
+local codes = require("Connect_lib.codes")
 
 local OUT = {}
 
